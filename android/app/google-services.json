@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "149357207049",
+    "project_id": "hyginiee-8a88b",
+    "storage_bucket": "hyginiee-8a88b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149357207049:android:f64892f4adf853ecd062d8",
+        "android_client_info": {
+          "package_name": "com.example.hyginieeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149357207049-ms3c2gufnder09tiqgsd3din88tjkpv2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUpGFTXcQkCmd--sRl2iI66cdAvJKBxSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149357207049-ms3c2gufnder09tiqgsd3din88tjkpv2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
