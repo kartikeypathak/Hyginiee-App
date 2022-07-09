@@ -38,22 +38,22 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(
-                  Icons.android,
-                  size: 100,
-                ),
+                // Icon(
+                //   Icons.android,
+                //   size: 100,
+                // ),
                 SizedBox(
                   height: 75,
                 ),
                 Text(
-                  'Hello Again!',
+                  'Hyginiee',
                   style: GoogleFonts.bebasNeue(
                     fontSize: 54,
                   ),
                 ),
                 SizedBox(height: 10),
                 Text(
-                  'Welcome Back',
+                  'India\'s'' #1 Laundary Service App',
                   style: TextStyle(
                     fontSize: 24,
                   ),
@@ -86,6 +86,7 @@ class _LoginPageState extends State<LoginPage> {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: TextField(
+                    obscureText: true,
                     controller: _passwordController,
                     decoration: InputDecoration(
                       enabledBorder: OutlineInputBorder(
