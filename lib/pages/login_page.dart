@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../pages/forgot_password_page.dart';
+import '../pages/phone_auth.dart';
 
 class LoginPage extends StatefulWidget {
   final VoidCallback showRegisterPage;
@@ -113,7 +114,8 @@ class _LoginPageState extends State<LoginPage> {
                     children: [
                       GestureDetector(
                         onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) {
                             return ForgotPassword();
                           }));
                         },
@@ -157,7 +159,6 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: 25),
 
                 // SignUp button
-
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -176,6 +177,24 @@ class _LoginPageState extends State<LoginPage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                    ),
+                  ],
+                ),
+
+                SizedBox(height: 80),
+
+                // Phone Authentication
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                              return PhoneAuth();
+                            }));
+                      },
+                      child: Icon(Icons.phone),
                     ),
                   ],
                 ),
