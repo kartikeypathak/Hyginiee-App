@@ -27,7 +27,7 @@ class _PhoneAuthState extends State<PhoneAuth> {
             fontSize: 30,
           ),
         ),
-        backgroundColor: Colors.indigo[900],
+        backgroundColor: Colors.blue[500],
       ),
       body: Container(
         margin: EdgeInsets.all(10),
@@ -65,7 +65,7 @@ class _PhoneAuthState extends State<PhoneAuth> {
               height: 10,
             ),
             MaterialButton(
-              color: Colors.indigo[900],
+              color: Colors.blue[500],
               onPressed: () {
                 if (otpVisibility) {
                   verifyOTP();
@@ -119,7 +119,7 @@ class _PhoneAuthState extends State<PhoneAuth> {
       },
     ).whenComplete(
       () {
-        //String? user;
+        //String?? user;
         if (user != null) {
           Fluttertoast.showToast(
             msg: "You are logged in successfully",
