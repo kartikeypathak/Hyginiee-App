@@ -112,13 +112,14 @@ class _PhoneAuthState extends State<PhoneAuth> {
         verificationId: verificationID, smsCode: otpController.text);
 
     await auth.signInWithCredential(credential).then(
-          (value) {
+      (value) {
         setState(() {
           user = FirebaseAuth.instance.currentUser;
         });
       },
     ).whenComplete(
-          () {
+      () {
+        //String? user;
         if (user != null) {
           Fluttertoast.showToast(
             msg: "You are logged in successfully",
@@ -129,10 +130,9 @@ class _PhoneAuthState extends State<PhoneAuth> {
             textColor: Colors.white,
             fontSize: 16.0,
           );
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) {
-                return HomePage();
-              }));
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return HomePage();
+          }));
         } else {
           Fluttertoast.showToast(
             msg: "your login is failed",
